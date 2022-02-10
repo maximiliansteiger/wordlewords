@@ -6,145 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="wordle.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>WordleWords</title>
 </head>
 
 <body>
-    <style>
-        body {
-            background-color: #121213;
-            margin: 0;
-            padding: 0;
-            font-family: 'Lucida Console', monospace;
-            overflow: hidden;
-            color: #D7DADC;
-            
-            font-size: 3.5vh;
-        }
-
-        .content {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            grid-gap: 10px;
-            grid-auto-rows: minmax(100px, auto);
-        }
-
-
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        .leftSide {
-            grid-column: 1 / 4;
-            grid-row: 1;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            height: 100vh;
-            width: 100%;
-        }
-
-        .middleButton {
-            grid-column: 4;
-            grid-row: 1;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .rightSide {
-            grid-column: 5/8;
-            grid-row: 1;
-            /* width: 50vw; */
-            height: 100vh;
-            background-color: #121213;
-            padding: 2vh;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            text-align: center;
-        }
-
-        table td,
-        table th {
-            border: 1px solid #538D4E;
-            border: none;
-            padding: 12px;
-        }
-
-        table tr:nth-child(even) {
-            background-color: rgb(42, 42, 46);
-        }
-
-        table tr:hover {
-            background-color: #b59f3b4f;
-        }
-
-        table th {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background-color: rgb(42, 42, 44);
-            color: white;
-        }
-
-        thead {
-            position: sticky;
-            top: 0;
-        }
-
-
-
-        #middleCenter {
-            text-align: center;
-
-        }
-
-        button {
-            font-size: 16px;
-            letter-spacing: 2px;
-            font-weight: 400 !important;
-            background-color: #538D4E;
-            color: #fff;
-            padding: 23px 50px;
-            margin: auto;
-            text-align: center;
-            display: inline-block !important;
-            text-decoration: none;
-            border: 0px;
-            width: max-content;
-            cursor: pointer;
-            transition: all 0.3s 0s ease-in-out;
-        }
-
-        button:hover {
-            transform: scale(1.04, 1);
-            background-color: #B59F3B;
-            text-decoration: none;
-        }
-
-        .words {
-            text-align: center;
-        }
-
-        .words p {
-            margin-bottom: 0;
-            padding: 0.8vh;
-            padding-bottom: 0.2vh;
-            display: inline-block;
-        }
-
-        [type=checkbox] {
-            accent-color: #B59F3B;
-            transform: scale(2.7);
-            z-index: -1;
-        }
-    </style>
+  
 
     <div class="content">
         <div class="leftSide">
@@ -162,110 +29,110 @@
                     <tr>
                         <td>a</td>
                         <td><input type="checkbox" name="a-notInWord" id=""></td>
-                        <td><input type="checkbox" name="a-inword" id=""></td>
+                        <td><input type="checkbox" name="aInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="a-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>b</td>
                         <td><input type="checkbox" name="b-notInWord" id=""></td>
-                        <td><input type="checkbox" name="b-inword" id=""></td>
+                        <td><input type="checkbox" name="bInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="b-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>c</td>
                         <td><input type="checkbox" name="c-notInWord" id=""></td>
-                        <td><input type="checkbox" name="c-inword" id=""></td>
+                        <td><input type="checkbox" name="cInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="c-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>d</td>
                         <td><input type="checkbox" name="d-notInWord" id=""></td>
-                        <td><input type="checkbox" name="d-inword" id=""></td>
+                        <td><input type="checkbox" name="dInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="d-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>e</td>
                         <td><input type="checkbox" name="e-notInWord" id=""></td>
-                        <td><input type="checkbox" name="e-inword" id=""></td>
+                        <td><input type="checkbox" name="eInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="e-pos" id="" min="1" max="5"></td>
                     </tr>
 
                     <tr>
                         <td>f</td>
                         <td><input type="checkbox" name="f-notInWord" id=""></td>
-                        <td><input type="checkbox" name="f-inword" id=""></td>
+                        <td><input type="checkbox" name="fInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="f-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>g</td>
                         <td><input type="checkbox" name="g-notInWord" id=""></td>
-                        <td><input type="checkbox" name="g-inword" id=""></td>
+                        <td><input type="checkbox" name="gInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="g-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>h</td>
                         <td><input type="checkbox" name="h-notInWord" id=""></td>
-                        <td><input type="checkbox" name="h-inword" id=""></td>
+                        <td><input type="checkbox" name="hInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="h-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>i</td>
                         <td><input type="checkbox" name="i-notInWord" id=""></td>
-                        <td><input type="checkbox" name="i-inword" id=""></td>
+                        <td><input type="checkbox" name="iInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="i-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>j</td>
                         <td><input type="checkbox" name="j-notInWord" id=""></td>
-                        <td><input type="checkbox" name="j-inword" id=""></td>
+                        <td><input type="checkbox" name="jInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="j-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>k</td>
                         <td><input type="checkbox" name="k-notInWord" id=""></td>
-                        <td><input type="checkbox" name="k-inword" id=""></td>
+                        <td><input type="checkbox" name="kInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="k-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>l</td>
                         <td><input type="checkbox" name="l-notInWord" id=""></td>
-                        <td><input type="checkbox" name="l-inword" id=""></td>
+                        <td><input type="checkbox" name="lInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="l-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>m</td>
                         <td><input type="checkbox" name="m-notInWord" id=""></td>
-                        <td><input type="checkbox" name="m-inword" id=""></td>
+                        <td><input type="checkbox" name="mInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="m-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>n</td>
                         <td><input type="checkbox" name="n-notInWord" id=""></td>
-                        <td><input type="checkbox" name="n-inword" id=""></td>
+                        <td><input type="checkbox" name="nInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="n-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>o</td>
                         <td><input type="checkbox" name="o-notInWord" id=""></td>
-                        <td><input type="checkbox" name="o-inword" id=""></td>
+                        <td><input type="checkbox" name="oInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="o-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>p</td>
                         <td><input type="checkbox" name="p-notInWord" id=""></td>
-                        <td><input type="checkbox" name="p-inword" id=""></td>
+                        <td><input type="checkbox" name="pInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="p-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>q</td>
                         <td><input type="checkbox" name="q-notInWord" id=""></td>
-                        <td><input type="checkbox" name="q-inword" id=""></td>
+                        <td><input type="checkbox" name="qInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="q-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>r</td>
                         <td><input type="checkbox" name="r-notInWord" id=""></td>
-                        <td><input type="checkbox" name="r-inword" id=""></td>
+                        <td><input type="checkbox" name="rInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="r-pos" id="" min="1" max="5"></td>
                     </tr>
 
@@ -273,19 +140,19 @@
                     <tr>
                         <td>s</td>
                         <td><input type="checkbox" name="s-notInWord" id=""></td>
-                        <td><input type="checkbox" name="s-inword" id=""></td>
+                        <td><input type="checkbox" name="sInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="s-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>t</td>
                         <td><input type="checkbox" name="t-notInWord" id=""></td>
-                        <td><input type="checkbox" name="t-inword" id=""></td>
+                        <td><input type="checkbox" name="tInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="t-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>u</td>
                         <td><input type="checkbox" name="u-notInWord" id=""></td>
-                        <td><input type="checkbox" name="u-inword" id=""></td>
+                        <td><input type="checkbox" name="uInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="u-pos" id="" min="1" max="5"></td>
 
 
@@ -293,31 +160,31 @@
                     <tr>
                         <td>v</td>
                         <td><input type="checkbox" name="v-notInWord" id=""></td>
-                        <td><input type="checkbox" name="v-inword" id=""></td>
+                        <td><input type="checkbox" name="vInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="v-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>w</td>
                         <td><input type="checkbox" name="w-notInWord" id=""></td>
-                        <td><input type="checkbox" name="w-inword" id=""></td>
+                        <td><input type="checkbox" name="wInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="w-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>x</td>
                         <td><input type="checkbox" name="x-notInWord" id=""></td>
-                        <td><input type="checkbox" name="x-inword" id=""></td>
+                        <td><input type="checkbox" name="xInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="x-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>y</td>
                         <td><input type="checkbox" name="y-notInWord" id=""></td>
-                        <td><input type="checkbox" name="y-inword" id=""></td>
+                        <td><input type="checkbox" name="yInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="y-pos" id="" min="1" max="5"></td>
                     </tr>
                     <tr>
                         <td>z</td>
                         <td><input type="checkbox" name="z-notInWord" id=""></td>
-                        <td><input type="checkbox" name="z-inword" id=""></td>
+                        <td><input type="checkbox" name="zInWord" class="positionInput" id=""></td>
                         <td><input type="number" name="z-pos" id="" min="1" max="5"></td>
                     </tr>
 
@@ -329,21 +196,21 @@
         <div class="middleButton">
             <div id="middleCenter">
                 <h1>Wordle</h1>
-                <button type="button" class="update">Update</button>
+                <button type="button" class="update">my github</button>
                 <h1>words</h1>
             </div>
 
         </div>
 
         <div class="rightSide">
+            <p> <span id="validOnly" title="show only valid words"> VALID</span> | <span id="solutionsOnly"
+                    title="show only winner words"> SOLUTIONS</span> | <span id="allWords"
+                    title="show all words">ALL</span></p>
 
             <div class="words">words</div>
 
         </div>
     </div>
-
-
-
 
 </body>
 
