@@ -15290,8 +15290,6 @@ let possibleSolutions = ["cigar",
 //just words up there 
 
 
-
-
 //initial call when page loads
 Update();
 
