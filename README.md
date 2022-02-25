@@ -4,7 +4,7 @@
 
 ## enter the letters you checked on the left on the right side you can see the words that match the letters you entered
 
-
+[try it on my github page](https://maximiliansteiger.github.io/projects/wordlewords/index.html)
 ---
 
 
